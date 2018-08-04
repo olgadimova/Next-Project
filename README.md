@@ -1,2 +1,1 @@
-# ecommerce-website
-E-commerce website project using Bootstrap, React and Redux.
+# My next project's folder.
