@@ -1,1 +1,1 @@
-# My next project's folder.
+# Free Code Camp Product Page Project.
