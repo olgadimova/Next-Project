@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Page Project</title>
+</head>
+<style>
+ :root {
+  --green: #aecdad;
+}
+
+html body {
+   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+#page {
+  height: 100%;
+}
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  margin:0;
+  border-bottom: 2px solid var(--green);
+  flex-wrap: wrap;
+  z-index: 2;
+  background-color: #f0ddb8
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+img {
+  flex-direction: row;
+  max-width: 100%;
+  height: auto;
+  
+}
+nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    float: right;
+  
+}
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+div.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#main {
+    position: relative;
+    left: 0;
+  padding-top: 100px;
+  z-index: 1;
+}
+form input {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+input[type="email"] {
+    width: 200px;
+}
+input[type="submit"] {
+    background-color: var(--green);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    
+}
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 20%;
+    align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  article {
+    flex-direction: column;
+    margin-left: 0;
+  }
+    
+  } 
+
+.wrapper {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+ 
+.wrapper p {
+    margin-top: 0px;
+}
+
+a {
+    color: black;
+}
+
+footer {
+  
+  width: 100%;
+  background-color: #f0ddb8;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
+</style>
+<body>
+    <div id="page">
+        <header id="header">
+          <div class="logo">
+           <img id="header-img" src="http://olgadimova.com/wp-content/uploads/2018/11/Crochet-Daily-3.png" alt="crochet logo"/> 
+          </div>
+          <nav id="nav-bar">
+            <ul>
+              <li><a href="#Newsletter" class="nav-link">Newsletter</a></li>
+              <li><a href="#about" class="nav-link">About Us</a></li>
+              <li><a class="nav-link" href="#Tutorials">Tutorials</a></li>
+            </ul>
+          </nav>
+        </header>
+
+<div class="container">
+</div>
+        <div id="main">
+            <section id="Newsletter">
+            <h2>Crochet Tutorials For Every Day Creation</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" 
+                    id="email" placeholder="Write Your Email Here" required>
+            <input id="submit" class="button" type="submit" value="Sign Up For Our Newsletter!">
+            </form>
+        </section>
+
+        <section id="about">
+            <h3>About Us & Our Strengths</h3>
+            <p> Hello! And thank you for visiting our page. We provide you with crochet tutorials every day of the year.</p>
+        <article>
+            <i class="fas fa-2x fa-video" style=" width: 50px; height: 50px; color:black"></i>
+            <div class="wrapper">
+            <h3>Video Content</h3>
+            <p> Watch tutorials on the go!</p>
+            </div>
+        </article>
+        <article>
+            <i class="far fa-2x fa-file-alt" style="width: 50px; height: 50px; color:black"></i>
+            <div class="wrapper">
+            <h3>PDF Patterns</h3>
+            <p>Not only you can watch video content, but we've got PDF version of all patterns used during tutorials.</p>
+            </div>
+        </article>
+        </section>
+        <section id="Tutorials" style="margin-bottom: 20px;">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mTP-JDeyi4o" frameborder="0" allowfullscreen></iframe>
+        </section>
+        </div>
+
+<footer>
+<p>&copy; Crochet Daily</p>
+</footer>
+      </div>
+</body>
+</html>
